@@ -3,5 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get "/single_actor.json", controller: "actors", action: "single_actor_method"
+
+  # Actor paths
+  get "actors/:id" => "actors#show"
+
+  # Movie paths
+  get "/movies" => "movies#index"
+  get "/movies/:id" => "movies#show"
 end

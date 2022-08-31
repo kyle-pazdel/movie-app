@@ -50,3 +50,5 @@ end
 group :development, :test do
   gem 'ffaker'
 end
+
+gem "http"

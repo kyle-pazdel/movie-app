@@ -66,3 +66,11 @@ Actor.create(
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
 )
+
+# MOVIE SEEDS
+
+Movie.create(
+  title: "The Matrix",
+  year: 1999,
+  plot: "It depicts a dystopian future in which humanity is unknowingly trapped inside a simulated reality, the Matrix, which intelligent machines have created to distract humans while using their bodies as an energy source.",
+)
