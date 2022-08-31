@@ -5,15 +5,64 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require "ffaker"
 
 Actor.create(
-  first_name: "Jane",
-  last_name: "Doe",
-  known_for: "Mystery Science Theater 3000",
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
 )
 
 Actor.create(
-  first_name: "John",
-  last_name: "Doe",
-  known_for: "Who's Afraid of Virginia Woolf?",
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
+)
+
+Actor.create(
+  first_name: FFaker::Name.first_name,
+  last_name: FFaker::Name.last_name,
+  favorite_animal: FFaker::AnimalUS.common_name,
 )
