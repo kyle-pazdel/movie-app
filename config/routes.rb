@@ -7,8 +7,12 @@ Rails.application.routes.draw do
   # Actor paths
   get "/actors" => "actors#index"
   get "/actors/:id" => "actors#show"
+  patch "/actors/:id" => "actors#update"
+  delete "/actors/:id" => "actors#destroy"
 
   # Movie paths
   get "/movies" => "movies#index"
   get "/movies/:id" => "movies#show"
+  patch "/movies/:id" => "movies#update"
+  delete "/movies/:id" => "movies#destroy"
 end

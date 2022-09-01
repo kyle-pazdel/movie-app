@@ -8,4 +8,14 @@ class MoviesController < ApplicationController
     movie = Movie.find_by(id: params["id"])
     render json: movie.as_json
   end
+
+  def update
+    movie = Movie.find_by(id: params["id"])
+    render json: { message: "Movie update!" }
+  end
+
+  def destroy
+    movie = Movie.find_by(id: params["id"])
+    render json: { message: "Movie delete!" }
+  end
 end
