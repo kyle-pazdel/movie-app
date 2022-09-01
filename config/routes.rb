@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   # Actor paths
-  get "actors/:id" => "actors#show"
+  get "/actors" => "actors#index"
+  get "/actors/:id" => "actors#show"
 
   # Movie paths
   get "/movies" => "movies#index"
