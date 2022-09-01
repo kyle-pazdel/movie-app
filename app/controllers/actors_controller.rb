@@ -11,7 +11,11 @@ class ActorsController < ApplicationController
 
   def update
     actor = Actor.find_by(id: params["id"])
-    render json: { message: "Actor update!" }
+    actor.first_name = params["first_name"] || actor.first_name
+    actor.last_name = params["last_name"] || actor.last_name
+    actor.favorite_animal = params["favorite_animal"] || actor.favorite_animal
+    actor.save
+    render json: actor.as_json
   end
 
   def destroy
