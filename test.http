@@ -4,6 +4,16 @@ GET http://localhost:3000/actors.json
 ### test route for actor show
 GET http://localhost:3000/actors/1.json
 
+### test route for actor show
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "New",
+  "last_name": "Actore",
+  "favorite_animal": "Unknown"
+}
+
 ### test route for actor update
 PATCH http://localhost:3000/actors/1.json
 Content-Type: application/json
@@ -25,6 +35,16 @@ GET http://localhost:3000/movies.json
 
 ### test route for movie show
 GET http://localhost:3000/movies/1.json
+
+### test route for movie show
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "title": "New Movie",
+  "year": "1999",
+  "plot": "Unknown"
+}
 
 ### test route for movie update
 PATCH http://localhost:3000/movies/1.json

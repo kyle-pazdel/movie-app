@@ -9,6 +9,15 @@ class ActorsController < ApplicationController
     render json: actor.as_json
   end
 
+  def create
+    actor = Actor.new
+    actor.first_name = params["first_name"]
+    actor.last_name = params["last_name"]
+    actor.favorite_animal = params["favorite_animal"]
+    actor.save
+    render json: actor.as_json
+  end
+
   def update
     actor = Actor.find_by(id: params["id"])
     actor.first_name = params["first_name"] || actor.first_name
