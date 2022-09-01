@@ -20,6 +20,6 @@ class ActorsController < ApplicationController
 
   def destroy
     actor = Actor.find_by(id: params["id"])
-    render json: { message: "Actor delete!" }
+    actor.delete
   end
 end

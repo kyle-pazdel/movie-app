@@ -20,6 +20,6 @@ class MoviesController < ApplicationController
 
   def destroy
     movie = Movie.find_by(id: params["id"])
-    render json: { message: "Movie delete!" }
+    movie.delete
   end
 end
