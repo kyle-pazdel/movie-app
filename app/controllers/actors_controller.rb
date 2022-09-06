@@ -14,6 +14,8 @@ class ActorsController < ApplicationController
     actor.first_name = params["first_name"]
     actor.last_name = params["last_name"]
     actor.favorite_animal = params["favorite_animal"]
+    actor.gender = params["gender"]
+    actor.age = params["age"]
     actor.save
     render json: actor.as_json
   end
@@ -23,6 +25,8 @@ class ActorsController < ApplicationController
     actor.first_name = params["first_name"] || actor.first_name
     actor.last_name = params["last_name"] || actor.last_name
     actor.favorite_animal = params["favorite_animal"] || actor.favorite_animal
+    actor.gender = params["gender"] || actor.gender
+    actor.age = params["age"] || actor.age
     actor.save
     render json: actor.as_json
   end

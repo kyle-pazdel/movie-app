@@ -9,19 +9,20 @@ POST http://localhost:3000/actors.json
 Content-Type: application/json
 
 {
-  "first_name": "New",
-  "last_name": "Actore",
-  "favorite_animal": "Unknown"
+  "first_name": "Andy",
+  "last_name": "Rodginous",
+  "favorite_animal": "Octopus",
+  "gender": "nimby",
+  "age": "46"
 }
 
 ### test route for actor update
-PATCH http://localhost:3000/actors/1.json
+PATCH http://localhost:3000/actors/24.json
 Content-Type: application/json
 
 {
-  "first_name": "John",
-  "last_name": "Doe",
-  "favorite_animal": "Squirrel"
+  "gender": "non-binary",
+  "age": 46
 }
 
 ### test route for actor delete
@@ -36,24 +37,25 @@ GET http://localhost:3000/movies.json
 ### test route for movie show
 GET http://localhost:3000/movies/1.json
 
-### test route for movie show
+### test route for movie create
 POST http://localhost:3000/movies.json
 Content-Type: application/json
 
 {
-  "title": "New Movie",
-  "year": "1999",
-  "plot": "Unknown"
+  "title": "Another New Movie",
+  "year": "2022",
+  "plot": "Something about something",
+  "director": "Some Guy",
+  "english": "true"
 }
 
 ### test route for movie update
-PATCH http://localhost:3000/movies/1.json
+PATCH http://localhost:3000/movies/4.json
 Content-Type: application/json
 
 {
-  "title": "Test title",
-  "year": "1999",
-  "plot": "Test plot"
+  "director": "Another Guy",
+  "english": "false"
 }
 
 ### test route for movie delete
