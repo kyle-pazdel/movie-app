@@ -7,95 +7,16 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "ffaker"
 
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
-
-Actor.create(
-  first_name: FFaker::Name.first_name,
-  last_name: FFaker::Name.last_name,
-  favorite_animal: FFaker::AnimalUS.common_name,
-  gender: "nimby",
-  known_for: "unknown",
-  age: 100,
-)
+15.times do
+  Actor.create(
+    first_name: FFaker::Name.first_name,
+    last_name: FFaker::Name.last_name,
+    favorite_animal: FFaker::AnimalUS.common_name,
+    gender: FFaker::Gender.random,
+    known_for: FFaker::Movie.title,
+    age: FFaker::PhoneNumberCU.phone_prefix,
+  )
+end
 
 # MOVIE SEEDS
 
