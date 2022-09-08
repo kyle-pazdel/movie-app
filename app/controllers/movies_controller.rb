@@ -17,7 +17,11 @@ class MoviesController < ApplicationController
     movie.director = params["director"]
     movie.english = params["english"]
     movie.save
-    render json: movie.as_json
+    if movie.save
+      render json: movie.as_json
+    else
+      render json: movie.errors.full_messages
+    end
   end
 
   def update

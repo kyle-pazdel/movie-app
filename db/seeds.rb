@@ -11,60 +11,90 @@ Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 Actor.create(
   first_name: FFaker::Name.first_name,
   last_name: FFaker::Name.last_name,
   favorite_animal: FFaker::AnimalUS.common_name,
+  gender: "nimby",
+  known_for: "unknown",
+  age: 100,
 )
 
 # MOVIE SEEDS

@@ -4,7 +4,7 @@ GET http://localhost:3000/actors.json
 ### test route for actor show
 GET http://localhost:3000/actors/1.json
 
-### test route for actor show
+### test route for actor create
 POST http://localhost:3000/actors.json
 Content-Type: application/json
 
@@ -12,8 +12,9 @@ Content-Type: application/json
   "first_name": "Andy",
   "last_name": "Rodginous",
   "favorite_animal": "Octopus",
+  "known_for": "something good",
   "gender": "nimby",
-  "age": "46"
+  "age": "26"
 }
 
 ### test route for actor update
@@ -42,10 +43,10 @@ POST http://localhost:3000/movies.json
 Content-Type: application/json
 
 {
-  "title": "Another New Movie",
-  "year": "2022",
+  "title": "",
+  "year": "222",
   "plot": "Something about something",
-  "director": "Some Guy",
+  "director": "",
   "english": "true"
 }
 
