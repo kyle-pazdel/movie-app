@@ -52,3 +52,5 @@ group :development, :test do
 end
 
 gem "http"
+
+gem "active_model_serializers"
