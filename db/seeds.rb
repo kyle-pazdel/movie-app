@@ -14,19 +14,29 @@ require "ffaker"
 #     favorite_animal: FFaker::AnimalUS.common_name,
 #     gender: FFaker::Gender.random,
 #     known_for: FFaker::Movie.title,
-#     age: FFaker::PhoneNumberCU.phone_prefix
+#     age: FFaker::PhoneNumberCU.phone_prefix,
 #   )
 # end
 
 # MOVIE SEEDS
 
-Movie.create(title: "The Matrix", year: 1999, plot: "It depicts a dystopian future in which humanity is unknowingly trapped inside a simulated reality, the Matrix, which intelligent machines have created to distract humans while using their bodies as an energy source.", director: "Lana and Lily Wachowski")
+# Movie.create(title: "The Matrix", year: 1999, plot: "It depicts a dystopian future in which humanity is unknowingly trapped inside a simulated reality, the Matrix, which intelligent machines have created to distract humans while using their bodies as an energy source.", director: "Lana and Lily Wachowski")
 
-5.times do
-  Movie.create(
-    title: FFaker::Movie.title,
-    year: FFaker::Vehicle.year,
-    plot: FFaker::Book.description,
-    director: FFaker::Name.name,
-  )
-end
+# 5.times do
+#   Movie.create(
+#     title: FFaker::Movie.title,
+#     year: FFaker::Vehicle.year,
+#     plot: FFaker::Book.description,
+#     director: FFaker::Name.name,
+#   )
+# end
+
+Genre.create(
+  name: "Sci-Fi",
+)
+Genre.create(
+  name: "Fantasy",
+)
+Genre.create(
+  name: "Drama",
+)
